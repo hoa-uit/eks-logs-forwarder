@@ -24,4 +24,4 @@ docker run --name loki -d -v $(pwd):/mnt/config -p 3100:3100 grafana/loki:3.0.0 
 docker run --name promtail -d -v $(pwd):/mnt/config -d -v $(pwd)/log:/var/log --link loki grafana/promtail:3.0.0 -config.file=/mnt/config/promtail-config.yaml
 
 # push logs to 
-kubectl logs my-pod -n my-namespace > log/service.log
+kubectl logs -f my-pod -n my-namespace > log/service.log

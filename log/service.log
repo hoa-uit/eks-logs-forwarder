@@ -1,0 +1,5 @@
+{ 
+    message: '[initializeTokenCache] initialize TokenCache successfully', 
+    level: 'info', 
+    timestamp: '2024-07-18T09:03:10.890Z' 
+} 
